@@ -1,0 +1,23 @@
+.dvc-headline-content {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  text-decoration: underline;
+}
+
+.dvc-content-ul {
+  /* color: #d71920; */
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 20px;
+}
+
+.dvc-content-ul:hover {
+  cursor: pointer;
+  color: #b30a10;
+}
+
+.dvc-icon {
+  color: #b30a10;
+}

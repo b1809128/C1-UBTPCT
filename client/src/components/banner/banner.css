@@ -1,0 +1,37 @@
+.dvc-top-banner {
+  background: #ffeeaa
+    url(https://dichvucong.bocongan.gov.vn/apps/bocongan/resources/image/bg-head-new.png)
+    no-repeat center center;
+  background-size: cover;
+  height: 160px;
+  overflow: hidden;
+  border-bottom: 2px solid #d71920;
+}
+
+.dvc-logo {
+  margin-top: 10px;
+  /* padding-left: 120px; */
+  display: flex;
+}
+
+.dvc-image img {
+  width: auto;
+  height: 90px;
+  margin-right: 20px;
+}
+
+.dvc-headline {
+  color: #d71920;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dvc-title {
+  color: #d71920;
+  font-size: 29px;
+  line-height: 28px;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
