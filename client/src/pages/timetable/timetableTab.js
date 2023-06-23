@@ -14,48 +14,61 @@ function TimetableTab() {
 
   return (
     <>
-      <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+      <div
+        className="dvc-header"
+        style={{
+          // height: "100vh",
+          // backgroundColor: "#cfe8fc",
+          marginTop: "20px",
+          marginBottom: "20px",
+          boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+        }}
+      >
+        <h1 className="dvc-headline dvc-headline-content">
+          <BiCalendar /> Lịch trực UBND TP. Cần Thơ
+        </h1>
+        <div class="dvc-timtbl-gate">
+          <div class="dvc-timtbl-gate-text">Thời gian / Cổng</div>
+          <div class="dvc-timtbl-gate-text">Cổng A</div>
+          <div class="dvc-timtbl-gate-text">Cổng B</div>
+          <div class="dvc-timtbl-gate-text">Cổng C</div>
+        </div>{" "}
+      </div>
+
+      <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
         <Tab eventKey={1} title="Ca Tối">
-          <div
-            className="dvc-header"
-            style={{
-              // height: "100vh",
-              // backgroundColor: "#cfe8fc",
-              marginTop: "20px",
-              marginBottom: "20px",
-              boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-            }}
-          >
-            <h1 className="dvc-headline dvc-headline-content">
-              <BiCalendar /> Lịch trực UBND TP. Cần Thơ
-            </h1>
-            <div class="dvc-timtbl-gate">
-              <div class="dvc-timtbl-gate-text">Thời gian / Cổng</div>
-              <div class="dvc-timtbl-gate-text">Cổng A</div>
-              <div class="dvc-timtbl-gate-text">Cổng B</div>
-              <div class="dvc-timtbl-gate-text">Cổng C</div>
-            </div>
-            {timeLineNight.map((data) => {
-              return (
-                <div class="dvc-timtbl-gate2">
-                  <div class="dvc-timtbl-gate-text1">{data}</div>
-                  <div class="dvc-timtbl-gate-text2">
-                    {" "}
-                    <FaUserAstronaut /> - Quốc Huy
-                  </div>
-                  <div class="dvc-timtbl-gate-text2">
-                    <FaUserAstronaut /> - Phước Duy
-                  </div>
-                  <div class="dvc-timtbl-gate-text2">
-                    <FaUserAstronaut /> - Nhựt Kha
-                  </div>
+          {timeLineNight.map((data) => {
+            return (
+              <div class="dvc-timtbl-gate2">
+                <div class="dvc-timtbl-gate-text1">{data}</div>
+                <div class="dvc-timtbl-gate-text2">
+                  {" "}
+                  <FaUserAstronaut /> - Quốc Huy
                 </div>
-              );
-            })}
-          </div>
+                <div class="dvc-timtbl-gate-text2">
+                  <FaUserAstronaut /> - Phước Duy
+                </div>
+                <div class="dvc-timtbl-gate-text2">
+                  <FaUserAstronaut /> - Nhựt Kha
+                </div>
+              </div>
+            );
+          })}
         </Tab>
         <Tab eventKey={2} title="Ca Sáng">
-          Tab 2 content
+          {timeLineNight.map((data) => {
+            return (
+              <div class="dvc-timtbl-gate2">
+                <div class="dvc-timtbl-gate-text1">{data}</div>
+                <div class="dvc-timtbl-gate-text2">
+                  {" "}
+                  Tên A - Tên B
+                </div>
+                <div class="dvc-timtbl-gate-text2">Phước Duy</div>
+                <div class="dvc-timtbl-gate-text2">Nhựt Kha</div>
+              </div>
+            );
+          })}
         </Tab>
       </Tabs>
     </>

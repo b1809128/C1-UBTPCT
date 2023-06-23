@@ -31,7 +31,11 @@ function Menu() {
               Lịch trực
             </Link>
           </li>
-          <li className="menu-items">Văn bản</li>
+          <li className="menu-items">
+            <Link to="/van-ban" className="menu-items-link">
+              Văn bản
+            </Link>
+          </li>
           <li className="menu-items">
             <Link to="/tai-mau-don" className="menu-items-link">
               Tải mẫu đơn
