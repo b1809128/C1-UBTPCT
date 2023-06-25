@@ -20,28 +20,46 @@ function Download() {
             <BiNews /> Tải mẫu đơn
           </h1>
           <p className="dvc-content-ul">
-            <AiOutlineDownload className="dvc-icon" /> Đơn xin nghỉ phép năm
+            <AiOutlineDownload className="dvc-icon" />
+            <a href="/file/c1pk02.docx" className="dvc-link">
+              Đơn xin nghỉ phép năm
+            </a>
           </p>
           <p className="dvc-content-ul">
-            <AiOutlineDownload className="dvc-icon" /> Đơn xin vào Đảng
+            <AiOutlineDownload className="dvc-icon" />{" "}
+            <a href="/file/c1pk02.docx" className="dvc-link">
+              Đơn xin vào Đảng
+            </a>
           </p>
           <p className="dvc-content-ul">
-            <AiOutlineDownload className="dvc-icon" /> Đơn xin đi học, ôn thi
-            Đại học
+            <AiOutlineDownload className="dvc-icon" />{" "}
+            <a href="/file/c1pk02.docx" className="dvc-link">
+              Đơn xin đi học, ôn thi Đại học
+            </a>
           </p>
           <p className="dvc-content-ul">
-            <AiOutlineDownload className="dvc-icon" /> Đơn cam kết xét chuyên
-            nghiệp CAND
+            <AiOutlineDownload className="dvc-icon" />{" "}
+            <a href="/file/c1pk02.docx" className="dvc-link">
+              Đơn cam kết xét chuyên nghiệp CAND
+            </a>
           </p>
           <p className="dvc-content-ul">
-            <AiOutlineDownload className="dvc-icon" /> Mẫu lý lịch trích ngang
+            <AiOutlineDownload className="dvc-icon" />{" "}
+            <a href="/file/c1pk02.docx" className="dvc-link">
+              Mẫu lý lịch trích ngang
+            </a>
           </p>
           <p className="dvc-content-ul">
-            <AiOutlineDownload className="dvc-icon" /> Mẫu báo cáo tổng kết đơn
-            vị
+            <AiOutlineDownload className="dvc-icon" />{" "}
+            <a href="/file/c1pk02.docx" className="dvc-link">
+              Mẫu báo cáo tổng kết đơn vị
+            </a>
           </p>
           <p className="dvc-content-ul">
-            <AiOutlineDownload className="dvc-icon" /> Mẫu kê khai Đoàn viên
+            <AiOutlineDownload className="dvc-icon" />{" "}
+            <a href="/file/c1pk02.docx" className="dvc-link">
+              Mẫu kê khai Đoàn viên
+            </a>
           </p>
         </Grid>
         <Grid item xs={6} md={4}>

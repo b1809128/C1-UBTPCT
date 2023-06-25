@@ -3,13 +3,13 @@ import { Tabs, Tab } from "react-bootstrap";
 import { BiCalendar } from "react-icons/bi";
 import { FaUserAstronaut } from "react-icons/fa";
 function TimetableTab() {
-  let timeLineNight = [
-    "18h-21h",
-    "21h-23h30",
-    "23h30-1h30",
-    "1h30-3h",
-    "3h-4h30",
-    "4h30-6h",
+  let timeObj = [
+    { night: "18h-21h", morning: "6h-9h" },
+    { night: "21h-23h30", morning: "9-11h30" },
+    { night: "23h30-1h30", morning: "11h30-13h30" },
+    { night: "1h30-3h", morning: "13h30-15h" },
+    { night: "3h-4h30", morning: "15h-16h30" },
+    { night: "4h30-6h", morning: "16h30-18h" },
   ];
 
   return (
@@ -35,12 +35,17 @@ function TimetableTab() {
         </div>{" "}
       </div>
 
-      <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+      <Tabs
+        defaultActiveKey={
+          new Date().getHours() >= 18 || new Date().getHours() <= 6 ? 1 : 2
+        }
+        id="uncontrolled-tab-example"
+      >
         <Tab eventKey={1} title="Ca Tối">
-          {timeLineNight.map((data) => {
+          {timeObj.map((data) => {
             return (
               <div class="dvc-timtbl-gate2">
-                <div class="dvc-timtbl-gate-text1">{data}</div>
+                <div class="dvc-timtbl-gate-text1">{data.night}</div>
                 <div class="dvc-timtbl-gate-text2">
                   {" "}
                   <FaUserAstronaut /> - Quốc Huy
@@ -56,14 +61,11 @@ function TimetableTab() {
           })}
         </Tab>
         <Tab eventKey={2} title="Ca Sáng">
-          {timeLineNight.map((data) => {
+          {timeObj.map((data) => {
             return (
               <div class="dvc-timtbl-gate2">
-                <div class="dvc-timtbl-gate-text1">{data}</div>
-                <div class="dvc-timtbl-gate-text2">
-                  {" "}
-                  Tên A - Tên B
-                </div>
+                <div class="dvc-timtbl-gate-text1">{data.morning}</div>
+                <div class="dvc-timtbl-gate-text2"> Tên A - Tên B</div>
                 <div class="dvc-timtbl-gate-text2">Phước Duy</div>
                 <div class="dvc-timtbl-gate-text2">Nhựt Kha</div>
               </div>

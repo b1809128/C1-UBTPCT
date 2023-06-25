@@ -22,7 +22,10 @@ const listName = [
 //output
 /*
 i = 1 [[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18]]
+time: 7h15
+display 7h,8h,9h,...,
+time 8h
 */
 let timeNow = new Date();
 
-console.log(timeNow.getHours()+"-"+timeNow.getMinutes())
+console.log( typeof timeNow.getHours()+"-"+timeNow.getMinutes())
